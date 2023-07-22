@@ -1,5 +1,4 @@
 
-
 var btn_iniciar=document.querySelector('#btn-iniciar');
 var btn_calcular=document.querySelector('#btn-calcular');
 var btn_inicio=document.querySelector('#btn-inicio');
@@ -20,12 +19,10 @@ abaixoPeso.style.display="none";
 acimaPeso.style.display="none";
 
 
-
 btn_iniciar.onclick=()=> {
     pageI.style.display="none";
     pageII.style.display="grid";
 }
-
 
 btn_calcular.onclick=(altura,peso)=> {
     let calculoIMC=parseFloat(Math.round(inputPeso.value/(inputAltura.value*inputAltura.value)));
@@ -79,8 +76,11 @@ btn_inicio.onclick=()=> {
     pageI.style.display="grid";
     pageII.style.display="none";
     pageIII.style.display="none";
+    resultado_numero.innerHTML="";
+    resultado_texto.innerHTML="";
     inputAltura.value="";
     inputPeso.value="";
     abaixoPeso.style.display="none";
     acimaPeso.style.display="none";
 }
+
