@@ -21,13 +21,13 @@
 }
 
 .pageI {
-    display: none;
+    display: grid;
 }
 .pageII {
     display: none;
 }
 .pageIII {
-    display: grid;
+    display: none;
 }
 
 /********** page I **********/
