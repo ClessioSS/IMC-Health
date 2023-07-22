@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/health-small.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>IMC</title>
+</head>
+<body>
+    <!------------ page I ------------>
+    <section class="container pageI" id="pageI">
+        <div class="container-content">
+            <h1 class="title">I M C</h1>
+            <h2 class="sub-title">Índice de massa corporal</h2>
+            <p class="text1">O <strong>índice de massa corporal (IMC)</strong> é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p>
+            <p class="text2">Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela <strong>Organização Mundial da Saúde (OMS)</strong>.</p>
+        </div>
+        <div class="image-page">
+            <img class="image" src="assets/health.png">
+        </div>
+        <div class="container-btn">
+            <button class="btn" id="btn-iniciar">INICIAR</button>
+        </div>
+    </section>
+    <!------------ page II ------------>
+    <section class="container pageII" id="pageII">
+        <div class="container-content">
+            <h2 class="sub-title">Calculadora de IMC</h2>
+            <p class="text1">O <strong>IMC</strong> é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros.</p>
+        </div>
+        <div class="container-input">
+            <div class="input-number">
+                <input class="input" type="text" placeholder="Altura (kq)" id="altura">
+                <label for="input-altura"></label>
+            </div>
+            <div class="input-number">
+                <input class="input" type="text" placeholder="Peso (m)" id="peso">
+                <label for="input-peso"></label>
+            </div>
+        </div>
+        <div class="container-btn">
+            <button class="btn" id="btn-calcular">CALCULAR</button>
+        </div>
+    </section>
+    <!------------ page III ------------>
+    <section class="container pageIII" id="pageIII">
+        <div class="container-content">
+            <h1 class="title">I M C</h1>
+            <h2 class="resultado-numero">28</h2>
+            <h2 class="resultado-texto">Acima do peso</h2>
+        </div>
+        <div class="image-page">
+            <img class="resultado-image" src="assets/man-skinny.png" id="abaixoPeso">
+            <img class="resultado-image" src="assets/man-fat.png" id="acimaPeso">
+        </div>
+        <div class="container-btn">
+            <button class="btn" id="btn-inicio">INICIO</button>
+        </div>
+    </section>
+    <script src="js/javaScript.js"></script>
+</body>
+</html>

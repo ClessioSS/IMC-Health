@@ -1,0 +1,54 @@
+@media screen and (max-width: 390px) {
+    /********** page I **********/
+    /***** content *****/
+    .title {
+        font-size: 4em;
+    }
+
+    .sub-title {
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+    .text1 {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+
+    .text2 {
+        display: none;
+    }
+
+    .image-page {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        height: 200px;
+    }
+
+    /********** page II **********/
+    /***** input *****/
+    .input {
+        font-size: 2.5em;
+        padding: 0 0 0 20%;
+    }
+
+    /***** button *****/
+    .btn {
+        height: 90px;
+        width: 70vw;
+    }
+}
+
+
+@media screen and (min-width: 1366px) {
+    /********** page I **********/
+    .image-page {
+        display: none;
+    }
+}
