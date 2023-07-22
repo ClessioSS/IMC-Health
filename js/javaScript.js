@@ -18,6 +18,9 @@ var acimaPeso=document.querySelector('#acimaPeso');
 abaixoPeso.style.display="none";
 acimaPeso.style.display="none";
 
+var peso=inputPeso.value;
+peso=Number(peso.replace(",","."));
+
 
 btn_iniciar.onclick=()=> {
     pageI.style.display="none";
@@ -25,7 +28,16 @@ btn_iniciar.onclick=()=> {
 }
 
 btn_calcular.onclick=(altura,peso)=> {
-    let calculoIMC=parseFloat(Math.round(inputPeso.value/(inputAltura.value*inputAltura.value)));
+
+    var altura=inputAltura.value;
+    altura=Number(altura.replace(",","."));
+
+    var peso=inputPeso.value;
+    peso=Number(peso.replace(",","."));
+
+
+    let calculoIMC=Math.round(peso/(altura*altura));
+    
     pageII.style.display="none";
     pageIII.style.display="grid";
 
